@@ -2,5 +2,9 @@
 
 int CalculateDamage(int attackPower, int defensePower)
 {
-    return attackPower - defensePower;
+    int damage = attackPower - defensePower;
+    if (damage < 1) {
+        return 1;
+    }
+    return damage;
 }
